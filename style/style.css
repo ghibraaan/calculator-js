@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --bs-black-1: #2C3333;
+    --bs-black-2: #2D2727;
+    --bs-red: #df2e38;
+    --bs-yellow: #EBB02D;
+    --bs-dark-grey: #525050;
+    --bs-grey: #F0EEED;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    background-color: var(--bs-grey);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif; !important;
+    font-weight: bold; !important;
+    color: white; !important;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+
+.container {
+    width: 23%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #222222;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.3);
+    /*border: 1px solid red;*/
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    padding-left: 0;
+    padding-right: 0;
+    /*width: 100%;*/
+}
+
+/* ----------------- BUTTON START -----------------*/
+.btn {
+    padding: 13px 0 20px 0;
+    width: 65%;
+    height: 80%;
+    color: white;
+    border-radius: 10px;
+}
+
+.clear {
+    color: var(--bs-red);
+    font-weight: bold;
+}
+
+.clear:hover {
+    color: var(--bs-red);
+    font-weight: bold;
+    background-color: rgba(223, 46, 56, 0.2);
+    transition: 0.2s ease-in;
+}
+
+.number {
+    color: white;
+}
+
+.number:hover {
+    /*color: #EBB02D;*/
+    color: white;
+    background-color: rgba(82, 80, 80, 0.3);
+    transition: 0.2s ease-in;
+}
+
+.op {
+    color: var(--bs-yellow);
+    font-weight: bold;
+}
+
+.op:hover {
+    color: var(--bs-yellow);
+    background-color: rgba(235, 176, 45, 0.1);
+    transition: 0.2s ease-in;
+}
+/* ----------------- BUTTON END -----------------*/
+
+/* ----------------- SCROLL BAR CUSTOM START -----------------*/
+.calc-screen {
+    overflow-y: scroll;
+}
+
+.calc-screen::-webkit-scrollbar {
+    width: 5px;
+}
+.calc-screen::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.calc-screen::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--bs-dark-grey);
+}
+/* ----------------- SCROLL BAR CUSTOM END-----------------*/
+
+.calc-operation-scr {
+    height: 55px;
+    margin-top: 20px;
+}
+
+.calc-operation {
+    text-align: right;
+    color: var(--bs-dark-grey);
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.calc-typed {
+    font-size: 45px;
+    height: 70px;
+    text-align: right;
+    color: white;
+}
+
+.calculator-btn {
+    background-color: var(--bs-black-1);
+    border-radius: 20px;
+}
